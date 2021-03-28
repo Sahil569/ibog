@@ -1,0 +1,32 @@
+.post-img {
+    overflow: hidden;
+}
+
+.post-img img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.more-post {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogpost-meta {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info {
+    margin: 15px 0;
+}
+
+.author-info div {
+    padding: 6 13px;
+    font-family: var(--font1);
+}

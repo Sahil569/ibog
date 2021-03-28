@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-top: 25px;
+    font-family: var(--font1);
+    /*height: 70px;*/
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-left span {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    font-size: 20px;
+}
+
+.nav-left ul li {
+    font-size: 23px;
+    list-style: none;
+    margin: 0 12px;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    background-color: blanchedalmond;
+    display: flex;
+    margin-top: 30px;
+    padding: 9px;
+    background-image: url('../img/free-coffee-news-vector-illustration.jpg');
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 49px;
+    z-index: 1;
+}
+
+.content-right {
+    display: none;
+}
+
+.content-right img {
+    height: 340px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.content::after {
+    content: "";
+    background-image: url('../img/free-coffee-news-vector-illustration.jpg');
+    position: absolute;
+    width: 100px;
+    height: inherit;
+    opacity: 0.15;
+}
+
+.home-articles {
+    padding-top: 15px;
+    padding: 13px;
+    background-color: burlywood;
+    margin-top: 28px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    right: 0;
+    top: 0;
+    font-size: 11px;
+    display: flex;
+}
+
+.year-box div {
+    margin: 12px 0px;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+}
+
+.home-article img {
+    width: 280px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 23px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+
+/* .home-articles{} */
+
+.footer {
+    height: 60px;
+    width: 400%px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.footer a {
+    color: white;
+}
